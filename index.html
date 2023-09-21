@@ -127,7 +127,7 @@
 
     <div class="grid"></div>
 
-    <video muted="" preload="" loop="" style="visibility: visible;" src="./vids/no_heart.mp4">
+    <video muted autoplay="false" controls="false" preload="auto" loop style="visibility: visible;" src="./vids/no_heart.mp4">
         <source src="no_heart.mp4" type="video/mp4">
         <script>
             const videos = [
@@ -149,6 +149,7 @@
 
             document.getElementsByClassName("holder")[0].innerHTML = songName;
 
+            document.getElementsByTagName("video")[0].play():
             document.getElementsByTagName("video")[0].src = "./vids/" + videoName;
             document.getElementsByTagName("video")[0].volume = 0.5;
         </script>
